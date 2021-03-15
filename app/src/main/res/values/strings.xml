@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RéSoEcole</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Mot de passe</string>
+    <string name="forget_password">Mot de passe oublié</string>
+    <string name="save_profil">Enregistrer</string>
+    <string name="title_authen">Authentification</string>
+    <string name="title_profil">Créer un compte</string>
+    <string name="action_sign_in">Se connecter</string>
+    <string name="action_sign_in_short">Inscrire-toi</string>
+    <string name="go_back">Retour</string>
+    <string name="go_next">Suivant</string>
+    <string name="ignore">Ignorer</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>

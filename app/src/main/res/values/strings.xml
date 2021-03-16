@@ -9,6 +9,9 @@
     <string name="title_profil">Créer un compte</string>
     <string name="action_sign_in">Se connecter</string>
     <string name="action_sign_in_short">Inscrire-toi</string>
+    <string name="title_fullName">Nom Complet*</string>
+    <string name="title_etablissement">Etablissement de enseignement</string>
+    <string name="title_etude">Programme détude</string>
     <string name="go_back">Retour</string>
     <string name="go_next">Suivant</string>
     <string name="ignore">Ignorer</string>

@@ -5,7 +5,7 @@
     android:id="@+id/fullProfile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".createAccountActivity">
+    tools:context=".ui.login.createAccountActivity">
 
     <TextView
         android:id="@+id/titleCreateAccount"

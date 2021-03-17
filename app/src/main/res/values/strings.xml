@@ -1,14 +1,15 @@
 <resources>
     <string name="app_name">RéSoEcole</string>
     <!-- Strings related to login -->
-    <string name="prompt_email">Courriel</string>
-    <string name="prompt_password">Mot de passe</string>
+    <string name="prompt_email">Courriel*</string>
+    <string name="hint_email">nom@umontreal.ca</string>
+    <string name="prompt_password">Mot de passe*</string>
     <string name="forget_password">Mot de passe oublié</string>
     <string name="save_profil">Enregistrer</string>
     <string name="title_authen">Authentification</string>
     <string name="title_profil">Créer un compte</string>
     <string name="action_sign_in">Se connecter</string>
-    <string name="action_sign_in_short">Inscrire-toi</string>
+    <string name="action_sign_in_short">S&apos;inscrire</string>
     <string name="title_fullName">Nom Complet*</string>
     <string name="title_etablissement">Etablissement d&apos;enseignement*</string>
     <string name="title_etude">Programme détude*</string>
@@ -18,9 +19,9 @@
     <string name="input_interet">Entrer vos centre d&apos;intérêts ici</string>
     <string name="title_cours">Quels cours prenew vous cette session?</string>
     <string name="title_clubs">Entrer les clubs auxquels vous participez:</string>
-    <string name="title_email">Courriel</string>
-    <string name="title_confirm_email">Confirmer votre courriel</string>
-    <string name="title_confirm_password">Confirmer votre mot de passe:</string>
+    <string name="title_email">Courriel*</string>
+    <string name="title_confirm_email">Confirmer votre courriel*</string>
+    <string name="title_confirm_password">Confirmer votre mot de passe*</string>
     <string name="button_likeInfo">J&apos;aime l&apos;info</string>
     <string name="button_likeMath">J&apos;aime les maths</string>
     <string name="input_class">IFT2905</string>

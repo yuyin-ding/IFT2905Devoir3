@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import com.example.ift2905devoir3.R;
 
-public class createAccount2Activity extends AppCompatActivity {
+public class CreateAccount2Activity extends AppCompatActivity {
 
     private Button button;
 

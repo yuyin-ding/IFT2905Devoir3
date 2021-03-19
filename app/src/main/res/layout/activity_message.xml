@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1F5FF"
+    tools:context=".message.MessageActivity"
+    android:orientation="horizontal">
+
+
+    <RelaviteLayout>
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="574dp"
+            android:background="@color/white"
+            android:drawableStart="@drawable/search"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="5dp"
+            android:hint="Recherchez une conversation ici" />
+    </RelaviteLayout>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="648dp">
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="66dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            app:srcCompat="@drawable/user"
+            android:clickable="true"
+            tools:ignore="VectorDrawableCompat"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/ecrireMessage"
+            android:layout_width="66dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/image"
+            android:clickable="true"
+            tools:ignore="VectorDrawableCompat"
+            android:contentDescription="TODO" />
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/messageProgram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp">
+    </ListView>
+
+    <TextView
+
+        android:id="@+id/Message"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="618dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="Message"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fullProfile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login.createAccountActivity">
+    android:background="#E1F5FF"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ui.login.CreateAccountActivity">
 
     <TextView
         android:id="@+id/titleCreateAccount"
-        android:layout_width="260dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="70dp"
         android:layout_marginLeft="48dp"
         android:layout_marginTop="35dp"
         android:layout_marginEnd="150dp"
         android:layout_marginRight="150dp"
         android:layout_marginBottom="632dp"
+        android:gravity="left"
         android:rotationX="0"
         android:text="@string/title_profil"
-        android:textColor="#02157C"
+        android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,11 +32,11 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75" />
+        app:layout_constraintVertical_bias="0.375" />
 
     <ScrollView
         android:id="@+id/profilScrol"
-        android:layout_width="416dp"
+        android:layout_width="540dp"
         android:layout_height="540dp"
         android:scrollbarAlwaysDrawHorizontalTrack="true"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,88 +53,60 @@
             android:orientation="vertical"
             android:rotation="0">
 
-            <TextView
-                android:id="@+id/fullName"
-                android:layout_width="363dp"
-                android:layout_height="41dp"
-                android:layout_gravity="center"
-                android:text="@string/title_fullName"
-                android:textColor="#050505"
-                android:textSize="20sp" />
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fullNameInput"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/fullNameInput"
-                    android:layout_width="377dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:hint="@string/title_fullName" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                android:id="@+id/Etabliss"
-                android:layout_width="372dp"
-                android:layout_height="43dp"
-                android:layout_gravity="center"
-                android:text="@string/title_etablissement"
-                android:textColor="#090909"
-                android:textSize="20sp" />
+
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etablisseInput"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etablisseInput"
-                    android:layout_width="380dp"
+
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:hint="@string/title_etablissement" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                android:id="@+id/progDetude"
-                android:layout_width="375dp"
-                android:layout_height="43dp"
-                android:layout_gravity="center"
-                android:text="@string/title_etude"
-                android:textColor="#0B0B0B"
-                android:textSize="20sp" />
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/progDetudeInput"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/progDetudeInput"
-                    android:layout_width="381dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:hint="@string/title_etude" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                android:id="@+id/nivDetude"
-                android:layout_width="381dp"
-                android:layout_height="42dp"
-                android:layout_gravity="center"
-                android:text="@string/title_niveau_etude"
-                android:textColor="#040404"
-                android:textSize="20sp" />
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nivDetudeInput"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/nivDetudeInput"
-                    android:layout_width="375dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:hint="@string/title_niveau_etude" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -153,19 +130,18 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/interetInput"
-                    android:layout_width="375dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
                     android:hint="@string/input_interet" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <Button
@@ -196,7 +172,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/inputClass"
@@ -206,27 +182,25 @@
                     android:hint="@string/input_class" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <LinearLayout
+
+
+
+            <Button
+                android:id="@+id/classIFT2905"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/button_IFT2905"
+                android:textSize="12sp"
+                android:layout_marginStart="15dp" />
 
-                <Button
-                    android:id="@+id/classIFT2905"
-                    android:layout_width="109dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:text="@string/button_IFT2905"
-                    android:textSize="12sp"
-                    android:layout_marginStart="15dp" />
+            <Button
+                android:id="@+id/classIFT2015"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_IFT2015"
+                android:textSize="12sp" />
 
-                <Button
-                    android:id="@+id/classIFT2015"
-                    android:layout_width="109dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/button_IFT2015"
-                    android:textSize="12sp" />
-            </LinearLayout>
 
             <TextView
                 android:id="@+id/quesClub"
@@ -239,7 +213,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/inputClub"
@@ -251,7 +225,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <Button
@@ -274,39 +248,31 @@
 
         </LinearLayout>
     </ScrollView>
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="50dp">
 
     <Button
         android:id="@+id/goBack"
-        android:layout_width="96dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginLeft="19dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="65dp"
-        android:layout_marginRight="65dp"
-        android:layout_marginBottom="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/go_back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/goNext"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profilScrol"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_alignParentLeft="true"
+        app:layout_constraintEnd_toStartOf="@+id/goNext" />
 
     <Button
         android:id="@+id/goNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="65dp"
-        android:layout_marginLeft="65dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginRight="19dp"
-        android:layout_marginBottom="14dp"
         android:text="@string/go_next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/goBack"
-        app:layout_constraintTop_toBottomOf="@+id/profilScrol"
-        app:layout_constraintVertical_bias="0.32" />
+        android:layout_alignParentRight="true"
+        app:layout_constraintStart_toEndOf="@+id/goBack" />
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

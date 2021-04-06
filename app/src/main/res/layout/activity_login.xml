@@ -118,8 +118,7 @@
             android:layout_marginTop="10dp"
             android:textColor="@color/black"
             android:text="@string/forget_password"
-            android:onClick="forgotPassword"
-            android:clickable="true" />
+            android:onClick="forgotPassword" />
 
         <TextView
             android:id="@+id/editEnregistrer"
@@ -129,8 +128,7 @@
             android:text="@string/save_profil"
             android:textColor="#2D9BF0"
             android:layout_alignParentRight="true"
-            android:onClick="enregistrement"
-            android:clickable="true" />
+            android:onClick="enregistrement" />
 
     </RelativeLayout>
 

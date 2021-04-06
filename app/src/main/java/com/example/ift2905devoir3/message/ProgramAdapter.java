@@ -28,7 +28,6 @@ public class ProgramAdapter extends ArrayAdapter<String>  {
 
     }
 
-
     @NonNull
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {

@@ -19,7 +19,6 @@ public class CreateAccountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
 
-        Intent intent = getIntent();
 
         button = (Button)findViewById(R.id.goNext);
         button2 = (Button) findViewById(R.id.goBack);

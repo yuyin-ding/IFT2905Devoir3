@@ -1,18 +1,24 @@
 package com.example.ift2905devoir3.message;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.ift2905devoir3.R;
+import com.example.ift2905devoir3.ui.login.CreateAccount2Activity;
+import com.example.ift2905devoir3.ui.login.CreateAccountActivity;
 import com.example.ift2905devoir3.ui.login.LoginActivity;
 
 public class MessageActivity extends AppCompatActivity {
@@ -26,7 +32,7 @@ public class MessageActivity extends AppCompatActivity {
      int[] programImage ={R.drawable.user,R.drawable.user1,R.drawable.user2,R.drawable.user3,
              R.drawable.user4};
     ProgramAdapter programAdapter;
-    ImageView ecrire_message;
+   // private TextView fenetreMessage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -34,7 +40,6 @@ public class MessageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_message);
         messageProgram=findViewById(R.id.messageProgram);
         search = findViewById(R.id.search);
-        ecrire_message=findViewById(R.id.ecrireMessage);
         programAdapter = new ProgramAdapter(this,friendName,programImage,message);
         messageProgram.setAdapter(programAdapter);
         search.addTextChangedListener(new TextWatcher() {
@@ -55,29 +60,20 @@ public class MessageActivity extends AppCompatActivity {
 
             }
         });
-        ecrire_message.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-              new_message();
-            }
-        });
 
 
     }
-    public void new_message()
-    {
-        Intent newMessage = new Intent(this,New_message_activity.class);
-        startActivity(newMessage);
-    }
+
+
     public void fenetre_messages(){
         Intent fenetre_messages = new Intent(this,Fenetre_message_activity.class);
         startActivity(fenetre_messages);
     }
+    public void newMessage(View v) {
+        Intent newMessage = new Intent(this,New_message_activity.class);
+        startActivity(newMessage);
 
-
-
-
-
+    }
 
 }

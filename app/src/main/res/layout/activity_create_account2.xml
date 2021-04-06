@@ -19,7 +19,7 @@
         android:layout_marginBottom="632dp"
         android:rotationX="0"
         android:text="@string/title_profil"
-        android:textColor="#02157C"
+        android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -148,9 +148,22 @@
         android:layout_marginRight="66dp"
         android:layout_marginBottom="56dp"
         android:text="@string/action_sign_in_short"
+        app:backgroundTint="#2D9BF0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profilScrol" />
+
+    <TextView
+        android:id="@+id/retour"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:text="Retour"
+        android:clickable="true"
+        android:textSize="20sp"
+        android:textColor="#2D9BF0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

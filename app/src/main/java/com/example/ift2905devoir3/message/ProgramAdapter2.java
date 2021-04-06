@@ -16,6 +16,7 @@ public class ProgramAdapter2 extends ArrayAdapter<String> {
     String[] friendName2;
     public ProgramAdapter2(Context context, String[] friendName, int[] images){
         super(context, R.layout.single_item,R.id.textView1,friendName);
+        this.context2 = context;
         this.images = images;
         this.friendName2=friendName;
 
@@ -23,23 +24,24 @@ public class ProgramAdapter2 extends ArrayAdapter<String> {
     @NonNull
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
-        View singleItem = convertView;
-        ProgramViewHolder holder = null;
-        if(singleItem==null){
+        View singleItem2 = convertView;
+        ProgramViewHolder2 holder = null;
+        if(singleItem2==null){
             LayoutInflater layoutInflater = (LayoutInflater) context2.getSystemService(
                     Context.LAYOUT_INFLATER_SERVICE);
-            singleItem=layoutInflater.inflate(R.layout.single_item,parent,false);
-            holder= new ProgramViewHolder(singleItem);
-            singleItem.setTag(holder);
+            singleItem2=layoutInflater.inflate(R.layout.single_item2,parent,false);
+            holder= new ProgramViewHolder2(singleItem2);
+            singleItem2.setTag(holder);
         }
         else{
-            holder = (ProgramViewHolder) singleItem.getTag();
+            holder = (ProgramViewHolder2) singleItem2.getTag();
         }
-        holder.itemImage.setImageResource(images[position]);
-        holder.friendName.setText(friendName2[position]);
+        holder.itemImage2.setImageResource(images[position]);
+        holder.friendName2.setText(friendName2[position]);
 
 
-        return singleItem;
+
+        return singleItem2;
     }
 
 
